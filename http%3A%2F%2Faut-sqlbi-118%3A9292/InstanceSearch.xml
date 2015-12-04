@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="InstanceSearch" path="/IderaCoreServices/v1/Instances/Search" id="545cd891-d318-4a54-a90e-d086a546efe4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="545cd891-d318-4a54-a90e-d086a546efe4fileName">InstanceSearch</con:setting></con:settings><con:parameters/><con:method name="POST" id="93c769bc-d86a-4334-af18-706a57f6f5f3" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="5b16162a-3e9f-4a9c-baba-a2918db090bf" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="${#Project#CWF.Authorization}"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://${#Project#CWF.endpoint}</con:endpoint><con:request>{
+	"DiscoveredAfter":"\/Date(928167600000-0500)\/",
+	"DiscoveredBefore":"\/Date(928167600000-0500)\/",
+	"InstanceStatus":"String content",
+	"LastSeenAfter":"\/Date(928167600000-0500)\/",
+	"LastSeenBefore":"\/Date(928167600000-0500)\/",
+	"Name":"String content",
+	"ProductID":2147483647,
+	"Version":"String content",
+	"tags":"String content"
+}</con:request><con:credentials/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource>

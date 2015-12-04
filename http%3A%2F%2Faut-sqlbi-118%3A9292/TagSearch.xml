@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="TagSearch" path="/IderaCoreServices/v1/Tags/Search" id="b5e34985-3bbb-4dcb-a221-587e9bf5b105" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b5e34985-3bbb-4dcb-a221-587e9bf5b105fileName">TagSearch</con:setting></con:settings><con:parameters/><con:method name="POST" id="994ba711-793f-439c-90ac-fff851078715" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="f436c236-8cee-4cd4-a43a-84519c395da2" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="${#Project#CWF.Authorization}"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://${#Project#CWF.endpoint}</con:endpoint><con:request>{
+	"Databases":"String content",
+	"Instances":"String content",
+	"Products":"String content"
+}</con:request><con:credentials/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource>

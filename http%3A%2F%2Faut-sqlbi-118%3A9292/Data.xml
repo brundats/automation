@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Data" path="/IderaCoreServices/v1/Products/{PRODUCTID}/Migrate/Data" id="94bafeeb-37e6-44cb-9729-db07a3f1f1e9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="94bafeeb-37e6-44cb-9729-db07a3f1f1e9fileName">Data</con:setting></con:settings><con:parameters><con:parameter><con:name>PRODUCTID</con:name><con:value>PRODUCTID</con:value><con:style>TEMPLATE</con:style><con:default>PRODUCTID</con:default></con:parameter><con:parameter><con:name>dryRun</con:name><con:value>{DRYRUN}</con:value><con:style>QUERY</con:style><con:default>{DRYRUN}</con:default></con:parameter></con:parameters><con:method name="POST" id="ea0705ec-46f8-4de7-b4b3-a4e675e8923d" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/xml; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:data="http://aut-sqlbi-118/IderaCoreServices/v1/Products/PRODUCTID/Migrate/Data">data:Response</con:element></con:representation><con:request name="Request 1" id="6143a449-c17e-4d26-bb9c-d070fbdd7614" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="Authorization" value="${#Project#CWF.Authorization}"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://${#Project#CWF.endpoint}</con:endpoint><con:request>{
+	"databases":[{
+		"Id":2147483647,
+		"Name":"String content",
+		"UtcFirstSeen":"\/Date(928167600000-0500)\/",
+		"UtcLastSeen":"\/Date(928167600000-0500)\/",
+		"Owner":"String content",
+		"InstanceID":2147483647,
+		"Status":0
+	}],
+	"instances":[{
+		"Comments":"String content",
+		"Edition":"String content",
+		"Id":2147483647,
+		"Location":"String content",
+		"Name":"String content",
+		"Owner":"String content",
+		"Status":0,
+		"UtcFirstSeen":"\/Date(928167600000-0500)\/",
+		"UtcLastSeen":"\/Date(928167600000-0500)\/",
+		"Version":"String content"
+	}],
+	"license":{
+		"KeyString":"String content",
+		"Repository":"String content",
+		"Status":0,
+		"IsTrial":true,
+		"IsPermanent":true,
+		"Expiration":"\/Date(928167600000-0500)\/",
+		"DaysToExpire":2147483647,
+		"LicensedServers":2147483647,
+		"MonitoredServers":2147483647,
+		"LicenseAboutToExpire":true,
+		"Comment":"String content",
+		"IsEnterprise":true,
+		"ProductId":2147483647,
+		"RestURL":"String content",
+		"WebURL":"String content"
+	},
+	"renamedTags":[{
+		"Name":"String content",
+		"NewName":"String content"
+	}],
+	"tags":[{
+		"Name":"String content",
+		"Description":"String content",
+		"ProductID":2147483647,
+		"IsGlobal":true,
+		"Resources":[{
+			"ResourceID":2147483647,
+			"ResourceType":0,
+			"ResourceName":"String content"
+		}],
+		"SourceID":2147483647
+	}],
+	"users":[{
+		"Account":"String content",
+		"DisplayName":"String content",
+		"RoleName":"String content",
+		"SID":"String content",
+		"SourceID":2147483647,
+		"UserType":"String content"
+	}]
+}
+</con:request><con:originalUri>http://aut-sqlbi-118/IderaCoreServices/v1/Products/PRODUCTID/Migrate/Data</con:originalUri><con:credentials/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="dryRun" value="DRYRUN" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource>
