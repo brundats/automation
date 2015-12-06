@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="c2e11c55-fdd8-44da-af31-e7ee8ae48709" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="InstanceSearch TestCase" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:description>TestCase generated for REST Resource [InstanceSearch] located at [/IderaCoreServices/v1/Instances/Search]</con:description><con:settings><con:setting id="c2e11c55-fdd8-44da-af31-e7ee8ae48709fileName">InstanceSearch-TestCase</con:setting></con:settings><con:testStep type="restrequest" name="Request 1" id="638f5702-f86e-418b-b10b-a9f7b3d9e95b"><con:settings/><con:config service="Dashboardv3" resourcePath="/IderaCoreServices/v1/Instances/Search" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="5b16162a-3e9f-4a9c-baba-a2918db090bf" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+<con:testCase id="c2e11c55-fdd8-44da-af31-e7ee8ae48709" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="POST-To-Get Filtered Instances based on search options" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:description>TestCase generated for REST Resource [InstanceSearch] located at [/IderaCoreServices/v1/Instances/Search]</con:description><con:settings><con:setting id="c2e11c55-fdd8-44da-af31-e7ee8ae48709fileName">InstanceSearch-TestCase</con:setting></con:settings><con:testStep type="restrequest" name="Request 1" id="638f5702-f86e-418b-b10b-a9f7b3d9e95b"><con:settings/><con:config service="Dashboardv3" resourcePath="/IderaCoreServices/v1/Instances/Search" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="5b16162a-3e9f-4a9c-baba-a2918db090bf" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
   &lt;con:entry key="Authorization" value="${#Project#CWF.Authorization}"/>
   &lt;con:entry key="Content-Type" value="application/json"/>
 &lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://${#Project#CWF.endpoint}</con:endpoint><con:request>{
-	"DiscoveredAfter":"\/Date(928167600000-0500)\/",
-	"DiscoveredBefore":"\/Date(928167600000-0500)\/",
-	"InstanceStatus":"String content",
-	"LastSeenAfter":"\/Date(928167600000-0500)\/",
-	"LastSeenBefore":"\/Date(928167600000-0500)\/",
-	"Name":"String content",
-	"ProductID":2147483647,
-	"Version":"String content",
-	"tags":"String content"
-}</con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
+	"DiscoveredAfter":"${#Project#CWF.Add.InstanceSearch.DiscoveredAfter}",
+	"DiscoveredBefore":"${#Project#CWF.Add.InstanceSearch.DiscoveredBefore}",
+	"InstanceStatus":"${#Project#CWF.Add.InstanceSearch.InstanceStatus}",
+	"LastSeenAfter":"${#Project#CWF.Add.InstanceSearch.LastSeenAfter}",
+	"LastSeenBefore":"${#Project#CWF.Add.InstanceSearch.DiscoveredBefore}",
+	"Name":"${#Project#CWF.Add.InstanceSearch.Name}",
+	"ProductID":${#Project#CWF.Add.InstanceSearch.ProductID},
+	"Version":"${#Project#CWF.Add.InstanceSearch.Version}",
+	"tags":"${#Project#CWF.Add.InstanceSearch.Tags}"
+}</con:request><con:originalUri>http://aut-sqlbi-118/IderaCoreServices/v1/Instances/Search</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="fb591a0b-2774-4cfa-8650-0e8c8f2a887f" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="4909432d-14af-408a-bb86-dc9d8258ce18" name="Contains"><con:configuration><token>(?s).*Name.*</token><ignoreCase>true</ignoreCase><useRegEx>true</useRegEx></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

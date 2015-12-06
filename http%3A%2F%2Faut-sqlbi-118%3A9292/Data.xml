@@ -66,4 +66,4 @@
 		"UserType":"String content"
 	}]
 }
-</con:request><con:originalUri>http://aut-sqlbi-118/IderaCoreServices/v1/Products/PRODUCTID/Migrate/Data</con:originalUri><con:credentials/><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="dryRun" value="DRYRUN" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource>
+</con:request><con:originalUri>http://aut-sqlbi-118/IderaCoreServices/v1/Products/PRODUCTID/Migrate/Data</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="dryRun" value="DRYRUN" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource>
